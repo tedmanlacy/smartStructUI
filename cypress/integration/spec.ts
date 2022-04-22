@@ -1,21 +1,19 @@
+import { Hero } from '~modules/hero/shared/hero.model';
 
 describe('My First Test using app actions', () => {
-  const getHomeComponent = () =>
-    cy.window()
-      .should('have.property', 'HomePageComponent')
+  const getHomeComponent = () => cy.window().should('have.property', 'HomePageComponent');
 
-  const getHeroes = () =>
-    getHomeComponent().should('have.property', 'heroes$')
+  const getHeroes = () => getHomeComponent().should('have.property', 'heroes$');
 
   it('Visits the initial project page', () => {
-    cy.visit('/')
+    cy.visit('/');
 
     console.log(getHomeComponent());
 
     getHeroes().then((value: any) => {
-      value.subscribe((heroes) => {
+      value.subscribe((heroes: Hero[]) => {
         assert.isArray(heroes);
       });
-    })
-  })
-})
+    });
+  });
+});

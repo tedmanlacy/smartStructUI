@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { MyHeroesPageComponent } from './my-heroes-page.component';
-import { LoadingPlaceholderComponent } from '../../../../shared/components/loading-placeholder/loading-placeholder.component';
+import { LoadingPlaceholderComponent } from '~shared/components/loading-placeholder/loading-placeholder.component';
 import { Hero } from '../../shared/hero.model';
 import { of } from 'rxjs';
 import {
@@ -17,7 +17,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgxScrollToFirstInvalidModule } from '@ismaestro/ngx-scroll-to-first-invalid';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ROUTES_CONFIG, RoutesConfig } from '../../../../configs/routes.config';
+import { ROUTES_CONFIG, RoutesConfig } from '~app/configs/routes.config';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroService } from '../../shared/hero.service';
 import { MatListModule } from '@angular/material/list';
@@ -42,41 +42,43 @@ describe('HeroesListPageComponent', () => {
     'showSnackBar',
   ]);
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        ApolloTestingModule,
-        FormsModule,
-        ReactiveFormsModule,
-        NoopAnimationsModule,
-        MatListModule,
-        MatIconModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MockModule(NgxScrollToFirstInvalidModule),
-      ],
-      declarations: [
-        MockComponent(HeroRemoveComponent),
-        MockComponent(LoadingPlaceholderComponent),
-        MyHeroesPageComponent,
-      ],
-      providers: [
-        { provide: MatSnackBar, useValue: matSnackBarSpy },
-        { provide: MatDialog, useValue: matDialogSpy },
-        { provide: HeroService, useValue: heroServiceSpy },
-        { provide: ROUTES_CONFIG, useValue: RoutesConfig },
-      ],
-    }).compileComponents();
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [
+          RouterTestingModule,
+          ApolloTestingModule,
+          FormsModule,
+          ReactiveFormsModule,
+          NoopAnimationsModule,
+          MatListModule,
+          MatIconModule,
+          MatFormFieldModule,
+          MatInputModule,
+          MockModule(NgxScrollToFirstInvalidModule),
+        ],
+        declarations: [
+          MockComponent(HeroRemoveComponent),
+          MockComponent(LoadingPlaceholderComponent),
+          MyHeroesPageComponent,
+        ],
+        providers: [
+          { provide: MatSnackBar, useValue: matSnackBarSpy },
+          { provide: MatDialog, useValue: matDialogSpy },
+          { provide: HeroService, useValue: heroServiceSpy },
+          { provide: ROUTES_CONFIG, useValue: RoutesConfig },
+        ],
+      }).compileComponents();
 
-    fixture = TestBed.createComponent(MyHeroesPageComponent);
-    component = fixture.debugElement.componentInstance;
-    router = TestBed.inject(Router);
-    navigateSpy = spyOn(router, 'navigate');
-    heroServiceSpy.searchHeroes.and.returnValue(of([new Hero({ is: 1, name: 'hero test' })]));
-    heroServiceSpy.removeHero.and.returnValue(of(true));
-    fixture.detectChanges();
-  }));
+      fixture = TestBed.createComponent(MyHeroesPageComponent);
+      component = fixture.debugElement.componentInstance;
+      router = TestBed.inject(Router);
+      navigateSpy = spyOn(router, 'navigate');
+      heroServiceSpy.searchHeroes.and.returnValue(of([new Hero({ is: 1, name: 'hero test' })]));
+      heroServiceSpy.removeHero.and.returnValue(of(true));
+      fixture.detectChanges();
+    })
+  );
 
   it('should create component and load heroes', () => {
     expect(component).toBeTruthy();
@@ -102,7 +104,7 @@ describe('HeroesListPageComponent', () => {
     });
 
     component.error = false;
-    await component.createNewHero();
+    component.createNewHero();
     expect(component.error).toBe(true);
   });
 
