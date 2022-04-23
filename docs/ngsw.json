@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650704147905,
+  "timestamp": 1650704810094,
   "index": "https://ismaestro.github.io/angular-example-app/index.html",
   "assetGroups": [
     {
@@ -53,10 +53,10 @@
   "hashTable": {
     "https://ismaestro.github.io/angular-example-app/111.3d71e2b575a7b72b.js": "7025445616660dde4914a90c9985c9c1a43c22d4",
     "https://ismaestro.github.io/angular-example-app/303.42101af5845fb938.js": "93f0ca7153aa73cd198c1272dc01d0258c50f7b7",
-    "https://ismaestro.github.io/angular-example-app/es/index.html": "bb6cfd9a56e7898e35525243fa24e8b6bd96a970",
-    "https://ismaestro.github.io/angular-example-app/index.html": "62c3c6cad2a3fe07887b1e677705e8a77d8f0ce0",
+    "https://ismaestro.github.io/angular-example-app/es/index.html": "71e05919162a0cbfb2e963a422176aca07cc299d",
+    "https://ismaestro.github.io/angular-example-app/index.html": "6d120cd5585a2a90aa8e243c867873cc1aa17bcf",
     "https://ismaestro.github.io/angular-example-app/main.b19bc4f5262c2696.js": "0602a6abc9a1ff858fd098b51ef269982ff54723",
-    "https://ismaestro.github.io/angular-example-app/manifest.webmanifest": "584a6d3069537f194de1e5b064a125e447c8a85e",
+    "https://ismaestro.github.io/angular-example-app/manifest.webmanifest": "b1b64fd881db2f1cf70dfe22b2104266db1e35de",
     "https://ismaestro.github.io/angular-example-app/polyfills.3225dd479d572191.js": "d3671064f0acdd68689f3646ac5a4d2a212a42bc",
     "https://ismaestro.github.io/angular-example-app/runtime.ba854e83e1c1e8ab.js": "13010d86c54082b862790f083ecef8f413b807c3",
     "https://ismaestro.github.io/angular-example-app/scripts.59b87b0433d537df.js": "4dec27a93e11d75bde5ee6d8adb41fa535817b64",
