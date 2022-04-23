@@ -4,7 +4,7 @@
   {
     1111: (k, h, i) => {
       i.r(h), i.d(h, { AuthModule: () => E });
-      var b = i(5108),
+      var U = i(5108),
         u = i(9808),
         r = i(3075),
         g = i(6696),
@@ -18,15 +18,15 @@
         Z = i(9224),
         m = i(7322),
         I = i(7531),
-        U = i(5245),
-        x = i(7423);
-      function T(o, a) {
+        x = i(5245),
+        A = i(7423);
+      function P(o, a) {
         if ((1 & o && (t.TgZ(0, 'mat-error'), t._uU(1), t.qZA()), 2 & o)) {
           const n = t.oxw();
           t.xp6(1), t.Oqu(n.getErrorMessage('firstName'));
         }
       }
-      function A(o, a) {
+      function T(o, a) {
         if ((1 & o && (t.TgZ(0, 'mat-error'), t._uU(1), t.qZA()), 2 & o)) {
           const n = t.oxw();
           t.xp6(1), t.Oqu(n.getErrorMessage('lastName'));
@@ -143,7 +143,7 @@
                 t.TgZ(12, 'mat-icon', 7),
                 t._uU(13, 'sentiment_very_satisfied'),
                 t.qZA(),
-                t.YNc(14, T, 2, 1, 'mat-error', 8),
+                t.YNc(14, P, 2, 1, 'mat-error', 8),
                 t.qZA()(),
                 t.TgZ(15, 'p')(16, 'mat-form-field', 5)(17, 'mat-label'),
                 t._uU(18, 'Last name'),
@@ -152,7 +152,7 @@
                 t.TgZ(20, 'mat-icon', 7),
                 t._uU(21, 'favorite'),
                 t.qZA(),
-                t.YNc(22, A, 2, 1, 'mat-error', 8),
+                t.YNc(22, T, 2, 1, 'mat-error', 8),
                 t.qZA()(),
                 t.TgZ(23, 'p')(24, 'mat-form-field', 5)(25, 'mat-label'),
                 t._uU(26, 'Enter your email'),
@@ -225,12 +225,12 @@
               r.Fj,
               r.JJ,
               r.oH,
-              U.Hw,
+              x.Hw,
               m.R9,
               u.O5,
               m.TO,
               r.Q7,
-              x.lW,
+              A.lW,
               m.bx,
             ],
             pipes: [u.gd],
@@ -261,12 +261,15 @@
           t.xp6(1), t.Oqu(n.getErrorMessage('password'));
         }
       }
-      var c = (() => (((c || (c = {})).BAD_USER_INPUT = 'BAD_USER_INPUT'), c))();
-      const P = p.ff.routesNames.auth,
+      var c = (() => {
+        return ((o = c || (c = {}))[(o.BAD_CREDENTIALS = 11e3)] = 'BAD_CREDENTIALS'), c;
+        var o;
+      })();
+      const b = p.ff.routesNames.auth,
         F = [
-          { path: P.signUp, component: N },
+          { path: b.signUp, component: N },
           {
-            path: P.logIn,
+            path: b.logIn,
             component: (() => {
               class o {
                 constructor(n, e, s, d) {
@@ -294,11 +297,8 @@
                   if (this.logInForm.valid) {
                     const n = this.logInForm.value;
                     this.authService.logIn(n.email, n.password).subscribe(e => {
-                      var s;
                       e.errors
-                        ? (null === (s = e.errors[0].extensions) || void 0 === s
-                            ? void 0
-                            : s.code) === c.BAD_USER_INPUT &&
+                        ? e.errors[0].code === c.BAD_CREDENTIALS &&
                           this.utilsService.showSnackBar('Bad credentials!', 'info-snack-bar')
                         : this.router.navigate([p.ff.routes.hero.myHeroes]);
                     });
@@ -427,9 +427,9 @@
                     r.oH,
                     u.O5,
                     m.TO,
-                    x.lW,
+                    A.lW,
                     m.R9,
-                    U.Hw,
+                    x.Hw,
                     m.bx,
                   ],
                   pipes: [u.gd],
@@ -468,7 +468,7 @@
               return new (n || o)();
             }),
             (o.ɵmod = t.oAB({ type: o })),
-            (o.ɵinj = t.cJS({ imports: [[u.ez, r.UX, b.m, J]] })),
+            (o.ɵinj = t.cJS({ imports: [[u.ez, r.UX, U.m, J]] })),
             o
           );
         })();
