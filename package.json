@@ -1,6 +1,6 @@
 {
   "name": "angular-example-app",
-  "version": "13.2.0",
+  "version": "13.2.2",
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
@@ -25,6 +25,7 @@
     "docs:generate": "compodoc -p tsconfig.doc.json",
     "docs:watch": "compodoc -p tsconfig.doc.json -s",
     "bundle-report": "ng build --configuration=production --stats-json && webpack-bundle-analyzer dist/stats.json",
+    "release:patch": "standard-version --release-as patch && git push --follow-tags origin master",
     "release:minor": "standard-version --release-as minor && git push --follow-tags origin master",
     "release:major": "standard-version --release-as major && git push --follow-tags origin master",
     "update": "ng update --force --all"
