@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650800389818,
+  "timestamp": 1650831810842,
   "index": "https://ismaestro.github.io/angular-example-app/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "https://ismaestro.github.io/angular-example-app/303.f6d87e296d4dfbdf.js",
         "https://ismaestro.github.io/angular-example-app/es/index.html",
         "https://ismaestro.github.io/angular-example-app/index.html",
-        "https://ismaestro.github.io/angular-example-app/main.940fade558ecfd37.js",
+        "https://ismaestro.github.io/angular-example-app/main.1a2977e64eb4455a.js",
         "https://ismaestro.github.io/angular-example-app/manifest.webmanifest",
         "https://ismaestro.github.io/angular-example-app/polyfills.3225dd479d572191.js",
         "https://ismaestro.github.io/angular-example-app/runtime.54a035f8a3a764ab.js",
@@ -53,9 +53,9 @@
   "hashTable": {
     "https://ismaestro.github.io/angular-example-app/111.10050c6e21f8b217.js": "d2af272599e83fcea3c8420aab86d4d0b88ffcb3",
     "https://ismaestro.github.io/angular-example-app/303.f6d87e296d4dfbdf.js": "f71bf223b14a704246e7a2ef333f340766b5edeb",
-    "https://ismaestro.github.io/angular-example-app/es/index.html": "0b057b2a0639ab4bc1194cc69d9926de8ce49008",
-    "https://ismaestro.github.io/angular-example-app/index.html": "1cb249c0cf9fc68f53ec2675a8f65df3e0d999fd",
-    "https://ismaestro.github.io/angular-example-app/main.940fade558ecfd37.js": "60a2e4e734fc3c4250083487b12e53a7355fce6b",
+    "https://ismaestro.github.io/angular-example-app/es/index.html": "cbc52ab3adb0b0b8ba0e7dca57479127d6a4845d",
+    "https://ismaestro.github.io/angular-example-app/index.html": "3dfa74b9408e10c1c3a979f39ee6f4454c350b2a",
+    "https://ismaestro.github.io/angular-example-app/main.1a2977e64eb4455a.js": "d04d3e2aad04c6f92372ad92478ec4b6cfd2a9c7",
     "https://ismaestro.github.io/angular-example-app/manifest.webmanifest": "ca078a96288a2a9456bb65a37f131f8379f00f28",
     "https://ismaestro.github.io/angular-example-app/polyfills.3225dd479d572191.js": "d3671064f0acdd68689f3646ac5a4d2a212a42bc",
     "https://ismaestro.github.io/angular-example-app/runtime.54a035f8a3a764ab.js": "74c8f7506b330a554d53c84f2ae3857b2903e2ba",
