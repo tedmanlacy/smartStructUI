@@ -1595,7 +1595,15 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
           const o = i.$implicit,
             c = d.oxw();
           d.xp6(1),
-            d.s9C('href', 'en' === o.name ? c.currentUrl : '/' + o.name + c.currentUrl, d.LSH),
+            d.hYB(
+              'href',
+              '',
+              c.baseUrl,
+              '',
+              'en' === o.name ? c.currentUrl : '/' + (o.name + c.currentUrl),
+              '',
+              d.LSH
+            ),
             d.xp6(4),
             d.Oqu(o.label);
         }
@@ -1608,6 +1616,7 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
               (this.storageService = p),
               (this.authService = _),
               (this.router = N),
+              (this.baseUrl = 'https://ismaestro.github.io/angular-example-app'),
               (this.selectedLanguage = ''),
               (this.currentUrl = ''),
               (this.languages = [
@@ -1701,7 +1710,7 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
                   d._uU(14, 'language'),
                   d.qZA()(),
                   d.TgZ(15, 'mat-menu', null, 8),
-                  d.YNc(17, st, 6, 2, 'div', 9),
+                  d.YNc(17, st, 6, 3, 'div', 9),
                   d.qZA()()()()()),
                 2 & o)
               ) {
@@ -19619,6 +19628,7 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
         g9A: () => rv,
         h0i: () => il,
         hGG: () => RC,
+        hYB: () => $f,
         hij: () => Tu,
         iGM: () => I_,
         ifc: () => Lt,
@@ -19639,7 +19649,6 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
         qOj: () => Tf,
         qZA: () => xu,
         qzn: () => Mo,
-        s9C: () => $f,
         sBO: () => gC,
         sIi: () => Hl,
         s_b: () => ju,
@@ -20094,8 +20103,16 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
         let t = e.bindingRootIndex;
         return -1 === t && (t = e.bindingRootIndex = e.tView.bindingStartIndex), t;
       }
+      function yi() {
+        return T.lFrame.bindingIndex;
+      }
       function ne() {
         return T.lFrame.bindingIndex++;
+      }
+      function g(e) {
+        const t = T.lFrame,
+          n = t.bindingIndex;
+        return (t.bindingIndex = t.bindingIndex + e), n;
       }
       function B(e) {
         T.lFrame.inI18n = e;
@@ -23012,13 +23029,18 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
               qc(t[11], 0, t, n, ta(e, n, t), Gd(n.parent || t[6], n, t));
             })(l, s, u);
       }
-      function $f(e, t, n) {
-        return Au(e, '', t, '', n), $f;
-      }
       function Au(e, t, n, s, l) {
         const u = tn(),
           v = za(u, t, n, s);
         return v !== qn && Gi(Bn(), ui(), u, e, v, u[11], l, !1), Au;
+      }
+      function $f(e, t, n, s, l, u, v) {
+        const S = tn(),
+          F = (function $a(e, t, n, s, l, u) {
+            const S = oa(e, yi(), n, l);
+            return g(2), S ? t + te(n) + s + te(l) + u : qn;
+          })(S, t, n, s, l, u);
+        return F !== qn && Gi(Bn(), ui(), S, e, F, S[11], v, !1), $f;
       }
       function Jm(e, t, n, s, l) {
         const u = e[n + 1],
@@ -23048,11 +23070,7 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
       function Ys(e, t, n, s) {
         const l = tn(),
           u = Bn(),
-          v = (function g(e) {
-            const t = T.lFrame,
-              n = t.bindingIndex;
-            return (t.bindingIndex = t.bindingIndex + e), n;
-          })(2);
+          v = g(2);
         u.firstUpdatePass &&
           (function ag(e, t, n, s) {
             const l = e.data;
@@ -23937,17 +23955,7 @@ var $localize = Object.assign(void 0 === $localize ? {} : $localize, { locale: '
         !(function nb(e, t, n) {
           if (Kl > 0) {
             const s = e.data[n];
-            Ug(
-              e,
-              t,
-              Array.isArray(s) ? s : s.update,
-              (function yi() {
-                return T.lFrame.bindingIndex;
-              })() -
-                Kl -
-                1,
-              Yl
-            );
+            Ug(e, t, Array.isArray(s) ? s : s.update, yi() - Kl - 1, Yl);
           }
           (Yl = 0), (Kl = 0);
         })(Bn(), tn(), e + 20);
