@@ -5,7 +5,7 @@
     6303: (h_, u, E) => {
       E.r(u), E.d(u, { HeroModule: () => f_ });
       var i = E(3075),
-        $ = E(5108),
+        $ = E(1056),
         M = E(6696);
       function d(e, n, t, o, r, a, s) {
         try {
@@ -790,7 +790,7 @@
             ],
             pipes: [A.Ts, A.OU],
             styles: [
-              'a[_ngcontent-%COMP%]{color:#0000008a;font-size:14px;text-transform:none;text-decoration:none}#loading-list[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:.2rem}#form-loading[_ngcontent-%COMP%]   .input-container[_ngcontent-%COMP%]{margin:.5rem 0}#left[_ngcontent-%COMP%]{width:50%;float:left;margin-left:6%}#right[_ngcontent-%COMP%]{margin-left:50%;text-align:center;padding-right:17%}.clear[_ngcontent-%COMP%]{clear:both}.mat-list[_ngcontent-%COMP%]{margin-left:auto;margin-right:auto;display:table}.mat-list[_ngcontent-%COMP%]   .mat-list-text[_ngcontent-%COMP%]{text-align:left!important}.hero-actions[_ngcontent-%COMP%]{margin-left:1rem;padding-bottom:0}.hero-actions[_ngcontent-%COMP%]   .icon__remove[_ngcontent-%COMP%]{padding-left:.5rem;color:#2f4f4f;cursor:pointer}form[_ngcontent-%COMP%]{display:grid;width:80%;margin-left:auto;margin-right:auto}form[_ngcontent-%COMP%]   .mat-raised-button[_ngcontent-%COMP%]{color:#fff;background:#3f51b5;width:50%;margin-left:auto;margin-right:auto}form[_ngcontent-%COMP%]   .mat-form-field[_ngcontent-%COMP%]{width:100%}#heroes-json[_ngcontent-%COMP%]{margin-top:2rem}#heroes-json[_ngcontent-%COMP%]   pre[_ngcontent-%COMP%]{margin-top:1rem}.my-heroes__no-heroes--message[_ngcontent-%COMP%]{text-align:center;width:20%;margin:0 auto;line-height:1.7rem}@media (max-width: 680px){#left[_ngcontent-%COMP%]{width:100%;float:none;margin-left:auto;margin-right:auto}#right[_ngcontent-%COMP%]{margin:1em auto 0;width:90%;float:none;padding:0}}',
+              'a[_ngcontent-%COMP%]{color:#0000008a;font-size:14px;text-transform:none;text-decoration:none}#loading-list[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:.2rem}#form-loading[_ngcontent-%COMP%]   .input-container[_ngcontent-%COMP%]{margin:.5rem 0}#left[_ngcontent-%COMP%]{width:50%;float:left;margin-left:6%}#right[_ngcontent-%COMP%]{margin-left:50%;text-align:center;padding-right:17%}.clear[_ngcontent-%COMP%]{clear:both}.mat-list[_ngcontent-%COMP%]{margin-left:auto;margin-right:auto;display:table}.mat-list[_ngcontent-%COMP%]   .mat-list-text[_ngcontent-%COMP%]{text-align:left!important}.hero-actions[_ngcontent-%COMP%]{margin-left:1rem;padding-bottom:0}.hero-actions[_ngcontent-%COMP%]   .icon__remove[_ngcontent-%COMP%]{padding-left:.5rem;color:#2f4f4f;cursor:pointer}form[_ngcontent-%COMP%]{display:grid;width:80%;margin-left:auto;margin-right:auto}form[_ngcontent-%COMP%]   .mat-raised-button[_ngcontent-%COMP%]{color:#fff;background:#3f51b5;width:50%;margin-left:auto;margin-right:auto}form[_ngcontent-%COMP%]   .mat-form-field[_ngcontent-%COMP%]{width:100%}#heroes-json[_ngcontent-%COMP%]{margin-top:2rem}#heroes-json[_ngcontent-%COMP%]   pre[_ngcontent-%COMP%]{margin-top:1rem}.my-heroes__no-heroes--message[_ngcontent-%COMP%]{text-align:center;width:20%;margin:0 auto;line-height:1.7rem}@media (max-width: 680px){#left[_ngcontent-%COMP%]{width:100%;float:none;margin-left:auto;margin-right:auto}#right[_ngcontent-%COMP%]{margin:1em auto 0;width:90%;float:none;padding:0}.my-heroes__no-heroes--message[_ngcontent-%COMP%]{width:90%}}',
             ],
             data: {
               animation: [
