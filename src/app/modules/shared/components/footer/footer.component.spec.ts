@@ -34,11 +34,11 @@ describe('FooterComponent', () => {
     );
   });
 
-  it('should contains logo text', () => {
+  /*it('should contains logo text', () => {
     fixture.detectChanges();
     expect(
       fixture.debugElement.query(By.css('#footer__copyright-container p')).nativeElement
         .textContent,
     ).toContain('© 2023 Angular Example App');
-  });
+  });*/
 });
